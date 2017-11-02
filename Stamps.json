@@ -1,0 +1,329 @@
+{
+  "front-version": "2.10.1",
+  "version": 3,
+  "nodes": [
+    {
+      "type": "Project",
+      "description": "",
+      "id": "f788bb2e-9402-48c2-b2f5-243387867573",
+      "lastModified": "2017-11-02T23:51:42.963+08:00",
+      "name": "Stamps",
+      "remoteModification": "2017-11-02T15:51:46.359Z"
+    },
+    {
+      "uriEditor": true,
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Text",
+        "autoSetLength": true,
+        "textBodyEditorHeight": 393,
+        "textBody": "<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\"\nxmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\nxmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"\nxmlns:tns=\"http://stamps.com/xml/namespace/2017/04/swsim/swsimv62\">\n<soap:Body>\n<tns:CreateIndicium>\n<tns:Authenticator>exp=1509691274&amp;uid=3004073&amp;cty=swsim&amp;ctk=Ds1B2v39AQIz6MuXQY+Hur47eZc=&amp;iid=ae4JZuEGpkCUeCaCiAeuVQ==&amp;rsid=0&amp;irsid=1&amp;eac=1534985658&amp;eacx=29554687&amp;eac3=0&amp;rrsid=0&amp;raid=0&amp;resellerid=0&amp;pexp=0&amp;pl=&amp;ast=1&amp;ipaddr=121.32.179.22&amp;ace=1509608433&amp;mac=ESx7lcECBWKrS/Ku0g1Rv3DXfVU=</tns:Authenticator>\n<tns:IntegratorTxID>1234567890ABCDEF</tns:IntegratorTxID>\n<tns:TrackingNumber/>\n<tns:Rate>\n<tns:FromZIPCode>11042</tns:FromZIPCode>\n<tns:ToZIPCode>90066</tns:ToZIPCode>\n<tns:Amount>7.2</tns:Amount>\n<tns:ServiceType>US-PS</tns:ServiceType>\n<tns:DeliverDays>7</tns:DeliverDays>\n<tns:PackageType>Package</tns:PackageType>\n<tns:ShipDate>2017-11-02</tns:ShipDate>\n<tns:DeliveryDate>2017-11-11</tns:DeliveryDate>\n<tns:DimWeighting>N</tns:DimWeighting>\n<tns:AddOns>\n<tns:AddOnV9>\n<tns:Amount>5.9</tns:Amount>\n<tns:AddOnType>US-A-ASR</tns:AddOnType>\n<tns:ProhibitedWithAnyOf>\n<tns:AddOnTypeV9>US-A-ASRD</tns:AddOnTypeV9>\n<tns:AddOnTypeV9>US-A-DC</tns:AddOnTypeV9>\n<tns:AddOnTypeV9>US-A-SC</tns:AddOnTypeV9>\n<tns:AddOnTypeV9>US-A-CM</tns:AddOnTypeV9>\n</tns:ProhibitedWithAnyOf>\n</tns:AddOnV9>\n</tns:AddOns>\n</tns:Rate>\n<tns:From>\n<tns:FullName>Some Body</tns:FullName>\n<tns:Address1>3420 Ocean Park Bl</tns:Address1>\n<tns:Address2>Ste 1000</tns:Address2>\n<tns:City>Santa Monica</tns:City>\n<tns:State>CA</tns:State>\n<tns:ZIPCode>90405</tns:ZIPCode>\n</tns:From>\n<tns:To>\n<tns:FullName>GEOFF ANTON</tns:FullName>\n<tns:NamePrefix/>\n<tns:FirstName/>\n<tns:MiddleName/>\n<tns:LastName/>\n<tns:NameSuffix/>\n<tns:Title/>\n<tns:Department/>\n<tns:Company>STAMPS.COM</tns:Company>\n<tns:Address1>12959 CORAL TREE PL</tns:Address1>\n<tns:Address2/>\n<tns:City>LOS ANGELES</tns:City>\n<tns:State>CA</tns:State>\n<tns:ZIPCode>90066</tns:ZIPCode>\n<tns:ZIPCodeAddOn>7020</tns:ZIPCodeAddOn>\n<tns:DPB>59</tns:DPB>\n<tns:CheckDigit>6</tns:CheckDigit>\n<tns:Province/>\n<tns:PostalCode/>\n<tns:Country/>\n<tns:Urbanization/>\n<tns:PhoneNumber/>\n<tns:Extension/>\n<tns:CleanseHash>7SWYAzuNh82cWhIQyRFXRNa71HFkZWFkYmVlZg==20180513C063</tns:CleanseHash>\n</tns:To>\n</tns:CreateIndicium>\n</soap:Body>\n</soap:Envelope>"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "secure": true,
+          "name": "https",
+          "version": "V11"
+        },
+        "host": "swsim.testing.stamps.com",
+        "path": "/swsim/swsimv62.asmx"
+      },
+      "id": "68ae4cc3-4d19-489f-b670-19345b1b0ec3",
+      "lastModified": "2017-11-02T15:20:21.714+08:00",
+      "name": "CreateIndicium",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "SOAPAction",
+          "value": "http://stamps.com/xml/namespace/2017/04/swsim/swsimv62/CreateIndicium"
+        },
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "text/xml"
+        }
+      ],
+      "metaInfo": {
+        "ownerId": "github|10534437"
+      },
+      "parentId": "f788bb2e-9402-48c2-b2f5-243387867573"
+    },
+    {
+      "uriEditor": true,
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Text",
+        "autoSetLength": true,
+        "textBody": "<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\"\nxmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\nxmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"\nxmlns:tns=\"http://stamps.com/xml/namespace/2017/04/swsim/swsimv62\">\n<soap:Body>\n<tns:CleanseAddress>\n<tns:Authenticator>exp=1509689828&amp;uid=3004073&amp;cty=swsim&amp;ctk=bsmqfzq8LJPoj9xafHpnCZxEOeY=&amp;iid=ae4JZuEGpkCUeCaCiAeuVQ==&amp;rsid=0&amp;irsid=1&amp;eac=1534985658&amp;eacx=29554687&amp;eac3=0&amp;rrsid=0&amp;raid=0&amp;resellerid=0&amp;pexp=0&amp;pl=&amp;ast=1&amp;ipaddr=121.32.179.22&amp;ace=1509607028&amp;mac=3TABQTdgBZ5SgKPMTi/bOePYdSw=</tns:Authenticator>\n<tns:Address>\n<tns:FullName>Geoff Anton</tns:FullName>\n<tns:Company>Stamps.com</tns:Company>\n<tns:Address1>12959 Coral Tree Place</tns:Address1>\n<tns:City>Los Angeles</tns:City>\n<tns:State>CA</tns:State>\n<tns:ZIPCode>90066</tns:ZIPCode>\n</tns:Address>\n<tns:FromZIPCode>11042</tns:FromZIPCode>\n</tns:CleanseAddress>\n</soap:Body>\n</soap:Envelope>"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "secure": true,
+          "name": "https",
+          "version": "V11"
+        },
+        "host": "swsim.testing.stamps.com",
+        "path": "/swsim/swsimv62.asmx"
+      },
+      "id": "6a585fa2-1976-4eb0-bd83-67c660b23bc4",
+      "lastModified": "2017-11-02T14:39:30.018+08:00",
+      "name": "CleanseAddress",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "SOAPAction",
+          "value": "http://stamps.com/xml/namespace/2017/04/swsim/swsimv62/CleanseAddress"
+        },
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "text/xml"
+        }
+      ],
+      "metaInfo": {
+        "ownerId": "github|10534437"
+      },
+      "parentId": "f788bb2e-9402-48c2-b2f5-243387867573"
+    },
+    {
+      "uriEditor": true,
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Text",
+        "autoSetLength": true,
+        "textBody": "<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\"\nxmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\nxmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"\nxmlns:tns=\"http://stamps.com/xml/namespace/2017/04/swsim/swsimv62\">\n<soap:Body>\n<tns:GetRates>\n<tns:Authenticator>exp=1509691233&amp;uid=3004073&amp;cty=swsim&amp;ctk=yPSuXSyOXA94PWNTZaEykYMFS7M=&amp;iid=ae4JZuEGpkCUeCaCiAeuVQ==&amp;rsid=0&amp;irsid=1&amp;eac=1534985658&amp;eacx=29554687&amp;eac3=0&amp;rrsid=0&amp;raid=0&amp;resellerid=0&amp;pexp=0&amp;pl=&amp;ast=1&amp;ipaddr=121.32.179.22&amp;ace=1509608433&amp;mac=Lt0s1IRdEhQ0tDzyf3HdIlWzMog=</tns:Authenticator>\n<tns:Rate>\n<tns:FromZIPCode>11042</tns:FromZIPCode>\n<tns:ToZIPCode>90066</tns:ToZIPCode>\n<tns:ServiceType>US-PS</tns:ServiceType>\n<tns:DeliverDays>7</tns:DeliverDays>\n<tns:PackageType>Package</tns:PackageType>\n<tns:ShipDate>2017-11-02</tns:ShipDate>\n<tns:DeliveryDate>2017-11-11</tns:DeliveryDate>\n<tns:Zone>8</tns:Zone>\n</tns:Rate>\n</tns:GetRates>\n</soap:Body>\n</soap:Envelope>"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "secure": true,
+          "name": "https",
+          "version": "V11"
+        },
+        "host": "swsim.testing.stamps.com",
+        "path": "/swsim/swsimv62.asmx"
+      },
+      "id": "9e38dee7-a0ff-4e93-8c6f-e54c7e6cb071",
+      "lastModified": "2017-11-02T14:41:31.773+08:00",
+      "name": "GetRates",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "SOAPAction",
+          "value": "http://stamps.com/xml/namespace/2017/04/swsim/swsimv62/GetRates"
+        },
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "text/xml"
+        }
+      ],
+      "metaInfo": {
+        "ownerId": "github|10534437"
+      },
+      "parentId": "f788bb2e-9402-48c2-b2f5-243387867573"
+    },
+    {
+      "uriEditor": true,
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Text",
+        "autoSetLength": true,
+        "textBody": "<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\"\nxmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\nxmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"\nxmlns:tns=\"http://stamps.com/xml/namespace/2017/04/swsim/swsimv62\">\n<soap:Body>\n<tns:AuthenticateUser>\n<tns:Credentials>\n<tns:IntegrationID>6609ee69-06e1-40a6-9478-26828807ae55</tns:IntegrationID>\n<tns:Username>KITC-001</tns:Username>\n<tns:Password>postage1</tns:Password>\n</tns:Credentials>\n</tns:AuthenticateUser>\n</soap:Body>\n</soap:Envelope>"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "secure": true,
+          "name": "https",
+          "version": "V11"
+        },
+        "host": "swsim.testing.stamps.com",
+        "path": "/swsim/swsimv62.asmx"
+      },
+      "id": "ac24c407-1856-4e30-8ca2-3ee2436e9a7c",
+      "lastModified": "2017-11-02T14:40:10.867+08:00",
+      "name": "AuthenticateUser",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "SOAPAction",
+          "value": "http://stamps.com/xml/namespace/2017/04/swsim/swsimv62/AuthenticateUser"
+        },
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "text/xml"
+        }
+      ],
+      "metaInfo": {
+        "ownerId": "github|10534437"
+      },
+      "parentId": "f788bb2e-9402-48c2-b2f5-243387867573"
+    },
+    {
+      "uriEditor": true,
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Text",
+        "autoSetLength": true,
+        "textBodyEditorHeight": 393,
+        "textBody": "<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\"\nxmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\nxmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"\nxmlns:tns=\"http://stamps.com/xml/namespace/2017/04/swsim/swsimv62\">\n<soap:Body>\n<tns:GetAccountInfo>\n<tns:Authenticator>exp=1509694272&amp;uid=3004073&amp;cty=swsim&amp;ctk=/VAY2IPStblwU1QB+3OZr32SdtE=&amp;iid=ae4JZuEGpkCUeCaCiAeuVQ==&amp;rsid=0&amp;irsid=1&amp;eac=1534985658&amp;eacx=29554687&amp;eac3=0&amp;rrsid=0&amp;raid=0&amp;resellerid=0&amp;pexp=0&amp;pl=&amp;ast=1&amp;ipaddr=121.32.179.22&amp;ace=1509611472&amp;mac=MzpkrjW/RBUOYcnsQJQKpqUEvg0=</tns:Authenticator>\n</tns:GetAccountInfo>\n</soap:Body>\n</soap:Envelope>"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "secure": true,
+          "name": "https",
+          "version": "V11"
+        },
+        "host": "swsim.testing.stamps.com",
+        "path": "/swsim/swsimv62.asmx"
+      },
+      "id": "bbe90f2d-525f-408c-a846-70339887dfef",
+      "lastModified": "2017-11-02T15:33:20.648+08:00",
+      "name": "GetAccountInfo",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "SOAPAction",
+          "value": "http://stamps.com/xml/namespace/2017/04/swsim/swsimv62/GetAccountInfo"
+        },
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "text/xml"
+        }
+      ],
+      "metaInfo": {
+        "ownerId": "github|10534437"
+      },
+      "parentId": "f788bb2e-9402-48c2-b2f5-243387867573"
+    },
+    {
+      "uriEditor": true,
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Text",
+        "autoSetLength": true,
+        "textBodyEditorHeight": 393,
+        "textBody": "<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\"\nxmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\nxmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"\nxmlns:tns=\"http://stamps.com/xml/namespace/2017/04/swsim/swsimv62\">\n<soap:Body>\n<tns:PurchasePostage>\n<tns:Authenticator>exp=1509695610&amp;uid=3004073&amp;cty=swsim&amp;ctk=LkJcUwy3KsXH/aG+5+beT6gBSd0=&amp;iid=ae4JZuEGpkCUeCaCiAeuVQ==&amp;rsid=0&amp;irsid=1&amp;eac=1534985658&amp;eacx=29554687&amp;eac3=0&amp;rrsid=0&amp;raid=0&amp;resellerid=0&amp;pexp=0&amp;pl=&amp;ast=1&amp;ipaddr=121.32.179.22&amp;ace=1509612810&amp;mac=yT+icp0vIQSYX7xwax/ZuILnR6Q=</tns:Authenticator>\n<tns:PurchaseAmount>200</tns:PurchaseAmount>\n<tns:ControlTotal>5.0000</tns:ControlTotal>\n</tns:PurchasePostage>\n</soap:Body>\n</soap:Envelope>"
+      },
+      "headersType": "Form",
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "secure": true,
+          "name": "https",
+          "version": "V11"
+        },
+        "host": "swsim.testing.stamps.com",
+        "path": "/swsim/swsimv62.asmx"
+      },
+      "id": "fd00f516-99d0-4f9f-ba13-2deab039f602",
+      "lastModified": "2017-11-02T15:58:05.167+08:00",
+      "name": "PurchasePostage",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "SOAPAction",
+          "value": "http://stamps.com/xml/namespace/2017/04/swsim/swsimv62/PurchasePostage"
+        },
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "text/xml"
+        }
+      ],
+      "metaInfo": {
+        "ownerId": "github|10534437"
+      },
+      "parentId": "f788bb2e-9402-48c2-b2f5-243387867573"
+    }
+  ]
+}
